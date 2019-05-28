@@ -11,7 +11,7 @@ import RxSwift
 import RxCocoa
 import RxAlamofire
 import SwiftyJSON
-class Presenter:PresenterDelegate{
+class ViewModel{
     let disposableBag = DisposeBag()
     var view:ViewController?
     let nwc: MyNetworkConnectionDelegate = MyNetworkConnection()

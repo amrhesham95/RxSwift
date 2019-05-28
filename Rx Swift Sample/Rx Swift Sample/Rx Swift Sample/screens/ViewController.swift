@@ -12,12 +12,12 @@ class ViewController: UIViewController
     @IBOutlet weak var myTableView: UITableView!
     
     let disposeBag = DisposeBag()
-    var presenter:Presenter?
+    var viewModel:ViewModel?
     override func viewDidLoad()
     {
-        presenter = Presenter()
+        viewModel = ViewModel()
         //presenter?.useObservable()
-        presenter?.dataObservable?.bind(to: self.myTableView.rx.items){
+        viewModel?.dataObservable?.bind(to: self.myTableView.rx.items){
             (tableView,row,element) in
             let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as? MyTableViewCell
             cell?.rightLabel.text = String(element.value)

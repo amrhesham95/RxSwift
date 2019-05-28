@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B4457D77AF61A64E8A53F468 /* Pods_Rx_Swift_Sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6AC1F9A93A580194444763D /* Pods_Rx_Swift_Sample.framework */; };
-		BA30D1C2229B71E000633BF1 /* Rate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA30D1C1229B71E000633BF1 /* Rate.swift */; };
 		BA30D1C4229B720B00633BF1 /* MyNetworkConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA30D1C3229B720B00633BF1 /* MyNetworkConnection.swift */; };
 		BA398616229C927400E4003F /* MyNetworkConnectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA398615229C927400E4003F /* MyNetworkConnectionDelegate.swift */; };
 		BA398618229C982A00E4003F /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA398617229C982A00E4003F /* ViewModel.swift */; };
@@ -23,7 +22,6 @@
 
 /* Begin PBXFileReference section */
 		8527C8D12C7B11BBDA8C0FB0 /* Pods-Rx Swift Sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rx Swift Sample.release.xcconfig"; path = "Pods/Target Support Files/Pods-Rx Swift Sample/Pods-Rx Swift Sample.release.xcconfig"; sourceTree = "<group>"; };
-		BA30D1C1229B71E000633BF1 /* Rate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rate.swift; sourceTree = "<group>"; };
 		BA30D1C3229B720B00633BF1 /* MyNetworkConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNetworkConnection.swift; sourceTree = "<group>"; };
 		BA398615229C927400E4003F /* MyNetworkConnectionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNetworkConnectionDelegate.swift; sourceTree = "<group>"; };
 		BA398617229C982A00E4003F /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
@@ -109,7 +107,6 @@
 		BAA7EEC4229A82C0002B6539 /* Rx Swift Sample */ = {
 			isa = PBXGroup;
 			children = (
-				BA30D1C1229B71E000633BF1 /* Rate.swift */,
 				BAA7EEC5229A82C0002B6539 /* AppDelegate.swift */,
 				BAA7EEC9229A82C0002B6539 /* Main.storyboard */,
 				BAA7EECF229A8379002B6539 /* Assets.xcassets */,
@@ -247,7 +244,6 @@
 				BA39861C229CA12000E4003F /* MyTableViewCell.swift in Sources */,
 				BAA7EECE229A82C0002B6539 /* Rx_Swift_Sample.xcdatamodeld in Sources */,
 				BA30D1C4229B720B00633BF1 /* MyNetworkConnection.swift in Sources */,
-				BA30D1C2229B71E000633BF1 /* Rate.swift in Sources */,
 				BA398616229C927400E4003F /* MyNetworkConnectionDelegate.swift in Sources */,
 				BAA7EEC6229A82C0002B6539 /* AppDelegate.swift in Sources */,
 			);
