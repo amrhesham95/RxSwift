@@ -7,13 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1EE2BDD0229ABE92003190E5 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE2BDCF229ABE92003190E5 /* Country.swift */; };
 		B4457D77AF61A64E8A53F468 /* Pods_Rx_Swift_Sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6AC1F9A93A580194444763D /* Pods_Rx_Swift_Sample.framework */; };
 		BA30D1C2229B71E000633BF1 /* Rate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA30D1C1229B71E000633BF1 /* Rate.swift */; };
 		BA30D1C4229B720B00633BF1 /* MyNetworkConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA30D1C3229B720B00633BF1 /* MyNetworkConnection.swift */; };
 		BA398616229C927400E4003F /* MyNetworkConnectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA398615229C927400E4003F /* MyNetworkConnectionDelegate.swift */; };
-		BA398618229C982A00E4003F /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA398617229C982A00E4003F /* Presenter.swift */; };
-		BA39861A229C986500E4003F /* PresenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA398619229C986500E4003F /* PresenterDelegate.swift */; };
+		BA398618229C982A00E4003F /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA398617229C982A00E4003F /* ViewModel.swift */; };
 		BA39861C229CA12000E4003F /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA39861B229CA12000E4003F /* MyTableViewCell.swift */; };
 		BAA7EEC6229A82C0002B6539 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA7EEC5229A82C0002B6539 /* AppDelegate.swift */; };
 		BAA7EEC8229A82C0002B6539 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA7EEC7229A82C0002B6539 /* ViewController.swift */; };
@@ -24,13 +22,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1EE2BDCF229ABE92003190E5 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		8527C8D12C7B11BBDA8C0FB0 /* Pods-Rx Swift Sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rx Swift Sample.release.xcconfig"; path = "Pods/Target Support Files/Pods-Rx Swift Sample/Pods-Rx Swift Sample.release.xcconfig"; sourceTree = "<group>"; };
 		BA30D1C1229B71E000633BF1 /* Rate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rate.swift; sourceTree = "<group>"; };
 		BA30D1C3229B720B00633BF1 /* MyNetworkConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNetworkConnection.swift; sourceTree = "<group>"; };
 		BA398615229C927400E4003F /* MyNetworkConnectionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNetworkConnectionDelegate.swift; sourceTree = "<group>"; };
-		BA398617229C982A00E4003F /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
-		BA398619229C986500E4003F /* PresenterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterDelegate.swift; sourceTree = "<group>"; };
+		BA398617229C982A00E4003F /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		BA39861B229CA12000E4003F /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
 		BAA7EEC2229A82C0002B6539 /* Rx Swift Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rx Swift Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAA7EEC5229A82C0002B6539 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -60,7 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				BAA7EEC7229A82C0002B6539 /* ViewController.swift */,
-				1EE2BDCF229ABE92003190E5 /* Country.swift */,
+				BA398617229C982A00E4003F /* ViewModel.swift */,
 				BA39861B229CA12000E4003F /* MyTableViewCell.swift */,
 			);
 			path = screens;
@@ -81,6 +77,15 @@
 				C6AC1F9A93A580194444763D /* Pods_Rx_Swift_Sample.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BA7941F8229D5AA8009E450A /* networkservice */ = {
+			isa = PBXGroup;
+			children = (
+				BA30D1C3229B720B00633BF1 /* MyNetworkConnection.swift */,
+				BA398615229C927400E4003F /* MyNetworkConnectionDelegate.swift */,
+			);
+			path = networkservice;
 			sourceTree = "<group>";
 		};
 		BAA7EEB9229A82BF002B6539 = {
@@ -112,10 +117,7 @@
 				BAA7EED4229A8379002B6539 /* Info.plist */,
 				BAA7EECC229A82C0002B6539 /* Rx_Swift_Sample.xcdatamodeld */,
 				1EE2BDCE229A8B33003190E5 /* screens */,
-				BA30D1C3229B720B00633BF1 /* MyNetworkConnection.swift */,
-				BA398615229C927400E4003F /* MyNetworkConnectionDelegate.swift */,
-				BA398617229C982A00E4003F /* Presenter.swift */,
-				BA398619229C986500E4003F /* PresenterDelegate.swift */,
+				BA7941F8229D5AA8009E450A /* networkservice */,
 			);
 			path = "Rx Swift Sample";
 			sourceTree = "<group>";
@@ -240,15 +242,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA398618229C982A00E4003F /* Presenter.swift in Sources */,
-				BA39861A229C986500E4003F /* PresenterDelegate.swift in Sources */,
+				BA398618229C982A00E4003F /* ViewModel.swift in Sources */,
 				BAA7EEC8229A82C0002B6539 /* ViewController.swift in Sources */,
 				BA39861C229CA12000E4003F /* MyTableViewCell.swift in Sources */,
 				BAA7EECE229A82C0002B6539 /* Rx_Swift_Sample.xcdatamodeld in Sources */,
 				BA30D1C4229B720B00633BF1 /* MyNetworkConnection.swift in Sources */,
 				BA30D1C2229B71E000633BF1 /* Rate.swift in Sources */,
 				BA398616229C927400E4003F /* MyNetworkConnectionDelegate.swift in Sources */,
-				1EE2BDD0229ABE92003190E5 /* Country.swift in Sources */,
 				BAA7EEC6229A82C0002B6539 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
